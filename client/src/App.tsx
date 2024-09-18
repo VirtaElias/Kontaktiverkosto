@@ -4,6 +4,7 @@ const App = () => {
   const [taskList, setTaskList] = useState<string[]>([]);
   const [newTask, setNewTask] = useState<string>('');
 
+  // Handle new task input change
   const handleChange = (e) => {
     setNewTask(e.target.value);
   };
